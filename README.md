@@ -1,6 +1,6 @@
 [README.md](https://github.com/user-attachments/files/29323599/README.md)
 
-# Green Light Reaction
+# Lightning Timer
 
 A simple browser-based reaction game where players watch a circle turn green and estimate how long it stayed green.
 
