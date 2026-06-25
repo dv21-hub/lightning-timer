@@ -16,6 +16,30 @@ body {
   place-items: center;
   padding: 2rem 1rem;
   background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  position: relative;
+}
+
+.ad-sidebar {
+  display: none;
+  width: 160px;
+  min-height: 600px;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.ad-placeholder {
+  width: 100%;
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+  border: 2px dashed #cbd5e1;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.75);
+  color: #64748b;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .app {
@@ -105,4 +129,27 @@ form {
 
 .muted {
   color: #6b7280;
+}
+
+@media (min-width: 1024px) {
+  body {
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1.5rem;
+  }
+
+  .ad-sidebar {
+    display: flex;
+  }
+
+  .ad-sidebar-left {
+    justify-self: end;
+  }
+
+  .ad-sidebar-right {
+    justify-self: start;
+  }
+
+  .app {
+    grid-column: 2;
+  }
 }
